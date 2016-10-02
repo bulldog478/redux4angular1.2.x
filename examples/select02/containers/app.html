@@ -1,0 +1,9 @@
+<div style="margin:20px;">
+<label>init select and relate select</label>
+<br>
+<div>
+<button type="button" id="initSelect" class="btn btn-default" ng-model="initSelectedIcon" ng-change="initSelectChanged(initSelectedIcon)" data-html="1" data-toggle="true" bs-options="item.value as item.label for item in initSelectItems" bs-select></div>
+<div>
+<br>
+<button type="button" id="relateSelect" class="btn btn-default" ng-model="relatedIcon" data-html="1" data-toggle="true" bs-options="item.value as item.label for item in relateSelectItems" bs-select></div>
+</div>
