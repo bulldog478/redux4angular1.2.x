@@ -1,2 +1,3 @@
 # redux4angular1.2.x
-write angular1.2.x app by redux
+## 细节
+1. 使用isomorphic-fetch，一定要先加上require('es6-promise').polyfill()

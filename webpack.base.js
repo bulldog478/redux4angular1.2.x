@@ -10,7 +10,12 @@ module.exports = (function(){
 		loaders : [
 			{
 				test:/\.js$/,
-				loader:'babel'
+				loader:'babel',
+				exclude:/node_modules/,
+				query:{
+					presets:['es2015'],
+					plugins:['transform-runtime']
+				}
 			},
 			{
 				test:/\.html/,
